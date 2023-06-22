@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\welcomeController;
+use App\Http\Controllers\aboutController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +33,8 @@ Route::middleware('auth')->group(function () {
 });
 
 route::get('/blog',[BlogController::class, 'get_info'])->name('blog');
+route::get('/welcome',[WelcomeController::class, 'get_inf'])->name('welcome');
+route::get('/about',[AboutController::class, 'get_in'])->name('about');
+route::get('/home',[HomeController::class, 'get_no'])->name('home');
 
 require __DIR__.'/auth.php';
