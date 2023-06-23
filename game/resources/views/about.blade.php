@@ -52,5 +52,13 @@
                 <img class="blog-image" src="{{ asset('assets/photos/35170de0e1a481c7536813961eedc3a0.jpg') }}" alt="">
             </div>
         </div>
+
+        <footer class="bg-gray-200 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center text-gray-600 dark:text-gray-400">
+                    &copy; elham@gmail.com
+                </div>
+            </div>
+        </footer>
     </body>
 @endsection
